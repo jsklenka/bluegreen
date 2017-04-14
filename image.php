@@ -11,7 +11,8 @@ if ( $deployment == 'blue') {
 } elseif ($deployment == 'green')  {
   $color = imagecolorallocate($im, 0, 255, 0);
 } else {
-  $color = imagecolorallocate($im, 0, 0, 255);
+  $color = imagecolorallocate($im, 0, 255, 0);
+  // this is the change backup (make everythign green): $color = imagecolorallocate($im, 0, 0, 255);
 }
 
 // Draw a filled rectangle
